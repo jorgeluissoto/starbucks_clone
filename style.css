@@ -10,6 +10,9 @@
   --color-primary:#006241;
   --color-secondary: #d50032;
   --color-extra: #d4e9e2;
+  --box-a: #3d7170;
+  --box-b: #f4c5a1;
+  --box-c: #8b323e;
 }
 
 html, body{
@@ -29,6 +32,14 @@ ul {
 p{
   margin: 5px 0;
   line-height: 1.7;
+}
+
+img{
+  max-width: 100%;
+}
+
+section a{
+  color: var(--color-primary);
 }
 
 /* Navbar */
@@ -83,6 +94,33 @@ p{
 .navbar-nav-right li:nth-child(2){
   margin: 0 5px;
 }
+
+/* Box */
+.box{
+  margin-bottom: 30px;
+}
+.box-inner{
+  max-width: 700px;
+  margin: 0 auto;
+}
+.box-text{
+  max-width: 500px;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 0;
+}
+.box-text .btn{
+  margin-top: 20px;
+}
+
+/* Grid style */
+.grid-col-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* Button */
 .btn{
   cursor: pointer;
@@ -99,7 +137,8 @@ p{
   border-color: #000;
   color: #000;
 }
-.btn-dark-outline:hover{
+.btn-dark-outline:hover,
+.btn-light-outline:hover{
   background-color: rgba(0,0,0,0.06);
 }
 .btn-light-outline{
@@ -112,4 +151,76 @@ p{
 }
 .btn-dark:hover{
   background-color: #333;
+}
+/* Backgrounds */
+.bg-extra{
+  background-color: var(--color-extra);
+  color: #1e3932;
+}
+.bg-box-a{
+  background-color: var(--box-a);
+  color: #fff;
+}
+.bg-box-b{
+  background-color: var(--box-b);
+  color: #1e3932;
+}
+.bg-box-c{
+  background-color: var(--box-c);
+  color: #fff;
+}
+/* Text style center */
+.text-center{
+  text-align: center;
+}
+.text-xl{
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.text-lg{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.text-md{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.text-sm{
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+/* Padding */
+.py-sm{
+  padding: 10px 0;
+}
+.py-md{
+  padding: 20px 0;
+}
+.py-lg{
+  padding: 40px 0;
+}
+
+@media(max-width: 960px){
+  .text-xl{
+    font-size: 30px;
+  }
+  .text-lg{
+    font-size: 25px;
+  }
+  .text.md{
+    font-size: 19px;
+  }
+}
+
+@media(min-width: 1440px) {
+  .box{
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
