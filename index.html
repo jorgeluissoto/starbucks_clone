@@ -47,8 +47,41 @@
           </button>
         </li>
       </ul>
+
+      <!-- Hamburger Menu -->
+      <button type="button" class="hamburger" id="menu-btn">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
     </div>
   </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu hidden" id="menu">
+    <ul>
+      <li>
+        <a href="#">Menu</a>
+      </li>
+      <li>
+        <a href="#">Rewards</a>
+      </li>
+      <li>
+        <a href="#">Gift Cards</a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu-bottom">
+      <button class="btn btn-dark-outline">Sign in</button>
+      <button class="btn btn-dark">Join now</button>
+      <div>
+        <a href="#">
+          <img src="img/marker.svg" alt="marker">
+          <span>Find a store</span>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- Box extra -->
   <section class="box box-extra bg-extra text-center py-md">
@@ -60,7 +93,7 @@
   </section>
 
   <!-- Box A -->
-  <section class="box box-a bg-box-a grid-col-2">
+  <section class="box box-a bg-box-a grid-col-2 grid-reversed">
     <div class="box-text">
       <h2 class="text-xl">New year, cool new brew</h2>
       <p class="text-md">Introducing Pistachio Cream Cold Brew—bold, smooth coffee topped with pistachio cream cold foam.</p>
@@ -80,7 +113,7 @@
   </section>
 
 <!-- Box C -->
-  <section class="box box-c bg-box-c grid-col-2">
+  <section class="box box-c bg-box-c grid-col-2 grid-reversed">
     <div class="box-text">
       <h2 class="text-xl">Wrap your day</h2>
       <p class="text-md">Savory ingredients come together in our Bacon, Sausage & Egg Wrap for a satisfying meal on the go.</p>
@@ -90,6 +123,7 @@
   </section>
 
   <div class="divider"></div>
+
   <footer class="footer">
       <div class="footer-container">
         <div class="social">
